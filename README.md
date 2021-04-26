@@ -1,4 +1,4 @@
-# BS4020 FINAL YEAR PROJECT
+# BS4020 Final Year Project
 ---
 By: Ng Yong Zhi
 ## Disclaimer

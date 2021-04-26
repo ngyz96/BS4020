@@ -14,4 +14,6 @@ The folders for the different steps of analysis are in their respective folders.
 * py_helper_functions.py contains functions for reformatting data into tsv files for easy import into R for analysis.
 
 ## Overview of pipeline
-![fyp_diagram](https://user-images.githubusercontent.com/41257178/116043690-946cc080-a6a2-11eb-8d20-18c453c56234.png)
+![fyp_diagram (2)](https://user-images.githubusercontent.com/41257178/116087395-6358b400-a6d3-11eb-9dd1-11dda76cb8fd.png)
+
+

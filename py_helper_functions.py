@@ -1,3 +1,5 @@
+import os
+
 def parseMegan(filename, prefix=""):
     ''' Takes the MEGAN_info file generated from the MEGAN GUI and split it into the
         respective categories (TAX, INTERPRO2GO etc). '''
@@ -67,9 +69,38 @@ def interproscan_goatools(filename, output="interproscan_goatools.txt"):
         for key, value in mapping_data.items():
             out.write(key+"\t"+";".join(value)+"\n")
 
+def combine_bracken_output(filepath,level="P"):
+    file_list = os.listdir(filepath)
+    main_dic = {}
+    #read in all data
+    for file in file_list:
+        sample = file.replace("_bracken_phylums.kreport", "")
+        main_dic[sample] = {}
+        with open(os.path.join(filepath,file), "r") as f:
+            lines = f.readlines()
+            for line in lines:
+                line = line.split("\t")
+                if line[3] == level:
+                    main_dic[sample][line[5].strip()] = line[1]
+    all_taxa = set()
+    #get unique taxas
+    for key in main_dic.keys():
+        all_taxa.update(list(main_dic[key].keys()))
+    out = ["taxa"]
+    out.extend(all_taxa)
+    for key in main_dic.keys():
+        out[0] += "\t" + key
+        for i in range(1, len(out)):
+            taxa = out[i].split("\t")[0]
+            out[i] += "\t" + main_dic[key].get(taxa, "0")
+    with open("bracken_combined.tsv", "w") as f:
+        f.write("\n".join(out))
+
+
 
 #interproscan_reformat("INTERPRO2GO_MAP.txt")
-#parseMegan("MEGAN_info")
+#parseMegan("daa2rma.megan", "rma")
 #parseMegan("root_4m_info", prefix="root4m")
 #parseMegan("bulk_4m_info", prefix="bulk4m")
-interproscan_goatools("INTERPRO2GO_MAP_CLEANED.tsv")
+#interproscan_goatools("INTERPRO2GO_MAP_CLEANED.tsv")
+#combine_bracken_output("C:\\Users\\YZ\\Desktop\\FYP\\dip_metagenome\\results\\bracken_kreport",level="P")

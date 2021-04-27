@@ -1,4 +1,4 @@
-# BS4020 FINAL YEAR PROJECT
+# BS4020 Final Year Project
 ---
 By: Ng Yong Zhi
 ## Disclaimer
@@ -12,3 +12,8 @@ The folders for the different steps of analysis are in their respective folders.
 * R_scripts folder contains scripts for statistical analysis in R. 
 
 * py_helper_functions.py contains functions for reformatting data into tsv files for easy import into R for analysis.
+
+## Overview of pipeline
+![fyp_diagram (2)](https://user-images.githubusercontent.com/41257178/116087395-6358b400-a6d3-11eb-9dd1-11dda76cb8fd.png)
+
+

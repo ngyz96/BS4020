@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 if [ $# == 0 ]; then
         echo "Usage: ./humann.sh -i INDIR [-o OUTDIR -t THREADS]"

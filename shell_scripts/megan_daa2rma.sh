@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 if [ $# == 0 ]; then
         echo "Usage: ./diamond.sh -i INDIR -o OUTDIR -d MEGANMAP [-t]"

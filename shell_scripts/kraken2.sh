@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 if [ $# == 0 ]; then
         echo "Usage: ./kraken2.sh -i INDIR -o OUTDIR [-d DATABASE -t THREADS -l LEVEL -b]"

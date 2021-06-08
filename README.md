@@ -2,6 +2,9 @@
 ## Project title: Characterising the diversity and functional profiles of the rhizobiome in mixed dipterocarp forest
 
 By: Ng Yong Zhi
+
+Obtained A grade for the module. 
+
 ## Disclaimer
 This repository contains all the scripts used in fulfilment of the requirements for BS4020 Final Year Project at School of Biological Sciences, Nanyang Technological University. I do not claim ownership of any of the softwares used in the process. 
 

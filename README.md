@@ -1,4 +1,5 @@
 # BS4020 Final Year Project
+## Project title: Characterising the diversity and functional profiles of the rhizobiome in mixed dipterocarp forest
 
 By: Ng Yong Zhi
 ## Disclaimer

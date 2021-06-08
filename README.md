@@ -2,7 +2,7 @@
 ---
 By: Ng Yong Zhi
 ## Disclaimer
-This repository contains all the scripts used in fulfilment of the requirements for BS4020 Final Year Project. I do not claim ownership of any of the softwares used in the process. 
+This repository contains all the scripts used in fulfilment of the requirements for BS4020 Final Year Project at School of Biological Sciences, Nanyang Technological University. I do not claim ownership of any of the softwares used in the process. 
 
 ## Structure
 The folders for the different steps of analysis are in their respective folders. 

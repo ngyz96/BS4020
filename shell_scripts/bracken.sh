@@ -25,7 +25,7 @@ do
 done
 
 : ${INDIR:?Missing -i}
-: ${THREADS:=24} ${BRACKEN:=false} ${DATABASE:="/home/bmb/Soil-Microbiomes/databases/kraken2"}
+: ${THREADS:=24} ${BRACKEN:=false} ${DATABASE:="Soil-Microbiomes/databases/kraken2"}
 : ${OUTDIR:="${INDIR}/bracken_out"} ${LEVEL:="S"} ${READLEN:=150}
 
 module load anaconda2020/python3

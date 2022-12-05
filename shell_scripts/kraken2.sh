@@ -25,7 +25,7 @@ do
 done
 
 : ${INDIR:?Missing -i} ${OUTDIR:?Missing -o}
-: ${THREADS:=24} ${BRACKEN:=false} ${DATABASE:="/home/bmb/Soil-Microbiomes/databases/kraken2"} ${LEVEL:="P"}
+: ${THREADS:=24} ${BRACKEN:=false} ${DATABASE:="/Soil-Microbiomes/databases/kraken2"} ${LEVEL:="P"}
 
 READ_LEN=150
 THRESHOLD=10

@@ -30,8 +30,8 @@ module load anaconda2020/python3
 eval "$(/usr/local/anaconda3-2020/bin/conda shell.bash hook)"
 conda activate /usr/local_sbs/conda_microbes
 
-BWT2DIR="/home/bmb/Soil-Microbiomes/bowtie2_index/${SPECIES}"
-BWT2HUMAN="/home/bmb/Soil-Microbiomes/bowtie2_index/GRCh38_noalt_as"
+BWT2DIR="Soil-Microbiomes/bowtie2_index/${SPECIES}"
+BWT2HUMAN="Soil-Microbiomes/bowtie2_index/GRCh38_noalt_as"
 cd $INDIR
 echo "Removing $SPECIES contaminants"
 for file in `ls -1 *_1.fq.gz | sed 's/_1.fq.gz//'`

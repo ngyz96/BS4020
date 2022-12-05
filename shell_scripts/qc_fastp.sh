@@ -1,9 +1,9 @@
 #!/bin/bash
 
 module load sbs/fastp/0.20.0
-BULKDIR="/home/bmb/Soil-Microbiomes/Diptrocarp-Microbiome/X401SC21010434-Z01-F002/raw_data"
-ROOTDIR="/home/bmb/Soil-Microbiomes/Diptrocarp-Microbiome/X401SC21010435-Z01-F001/raw_data"
-OUTDIR="/home/bmb/Soil-Microbiomes/Diptrocarp-Microbiome/fastp_data"
+BULKDIR="Soil-Microbiomes/Diptrocarp-Microbiome/X401SC21010434-Z01-F002/raw_data"
+ROOTDIR="Soil-Microbiomes/Diptrocarp-Microbiome/X401SC21010435-Z01-F001/raw_data"
+OUTDIR="Soil-Microbiomes/Diptrocarp-Microbiome/fastp_data"
 
 for file in `ls -1 ${BULKDIR}/**/*_1.fq.gz | sed 's/_1.fq.gz//'`
 do

@@ -21,7 +21,7 @@ do
 done
 
 : ${INDIR:?Missing -i}
-: ${THREADS:=24} ${DATABASE:="/home/bmb/Soil-Microbiomes/databases/diamond2021/nr.dmnd"} ${OUTDIR:="${INDIR}/diamond_out"}
+: ${THREADS:=24} ${DATABASE:="Soil-Microbiomes/databases/diamond2021/nr.dmnd"} ${OUTDIR:="${INDIR}/diamond_out"}
 
 module load anaconda2020/python3
 eval "$(/usr/local/anaconda3-2020/bin/conda shell.bash hook)"

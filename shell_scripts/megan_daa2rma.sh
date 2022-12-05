@@ -23,7 +23,7 @@ do
 done
 
 : ${INDIR:?Missing -i}
-: ${THREADS:=24} ${DATABASE:="/home/bmb/Soil-Microbiomes/databases/megan_map/megan-map-Jan2021.db"} ${OUTDIR:="${INDIR}/rma_out"} ${ALGO:="naive"}
+: ${THREADS:=24} ${DATABASE:="Soil-Microbiomes/databases/megan_map/megan-map-Jan2021.db"} ${OUTDIR:="${INDIR}/rma_out"} ${ALGO:="naive"}
 
 if [ ! -d "$OUTDIR" ]; then
 	echo "output directory missing, creating directory..."
